@@ -1,0 +1,205 @@
+body{
+    background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+    color: #000000; 
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 10;
+  padding: 10;
+  overflow: hidden;
+  background-color: #B22222;
+}
+
+.nav-item {
+  float: left;
+  color: #000000;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+}
+
+/* hero background image */
+.header{
+    height:70vh;
+    position: relative;
+    background:url("https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2017/10/website-pattern-1.jpg");
+    background-size: cover;    
+    
+}
+
+.myimage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    width: 75%;
+    height: 88%;
+    margin: auto;
+}
+/* text css above hero image*/
+
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:  #000000;
+}
+
+/* spacing on all sections */
+#about, #education, #projects, #contact {
+    font color: #000000;
+    margin-top: 3rem;
+    padding-top: 3rem;
+} 
+#contact {
+    padding-bottom: 4rem;
+}
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.project-img{
+    width: 100%;
+    height: 100%
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-github:hover, .fa-envelope:hover, .fa-hackerrank:hover, .fa-kaggle:hover{
+    color: #008000;
+}
+.fab, .fa {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    .hero_title {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 858px) {
+    .hero_title {
+        font-size: 4.5rem;
+    }
+}
+ 
+@media (min-width: 780px) {
+    .hero_title {
+        font-size: 4.1rem;
+    }
+}
+ 
+@media (min-width: 702px) {
+    .hero_title {
+        font-size: 3.8rem;
+    }
+}
+ 
+@media (min-width: 624px) {
+    .hero_title {
+        font-size: 3.3rem;
+    }
+}
+ 
+@media (min-width: 550px) {
+    .hero_title {
+        font-size: 3rem ;
+    }
+}
+
+@media (min-width: 480px) {
+    .hero_title {
+        font-size: 3rem ;
+    }
+}
+
+@media (min-width: 400px) {
+    .hero_title {
+        font-size: 3rem ;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero_title {
+        font-size: 3rem ;
+    }
+}
+<style>
+  form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  label, input[type="submit"] {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+
+ 
+
+
