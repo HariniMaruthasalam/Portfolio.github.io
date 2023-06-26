@@ -4,6 +4,20 @@ body{
     color: #000000; 
 }
 
+h4 {
+  display: Flex;
+  margin: 20px auto;
+  border: 20px solid #e2e9e2;
+  border-radius: 5px;
+  border-style: double;
+  width: 200px;  
+  padding: 20px;
+  color: #1518eb;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Verdana", sans-serif;
+}
+
 .navbar {
   list-style-type: none;
   margin: 10;
