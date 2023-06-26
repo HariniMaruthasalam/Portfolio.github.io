@@ -4,10 +4,6 @@ body{
     color: #000000; 
 }
 
-h4 {
-  border-style: double;
-}
-
 .navbar {
   list-style-type: none;
   margin: 10;
