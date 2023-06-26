@@ -12,17 +12,6 @@ body{
   background-color: #B22222;
 }
 
-h4 {
-  display: Flex;
-  margin: 500px auto;
-  border: 200px;
-  border-radius: 500px;
-  border-style: double;
-  width: 500px;  
-  padding: 20px;
-}
-
-
 .nav-item {
   float: left;
   color: #000000;
