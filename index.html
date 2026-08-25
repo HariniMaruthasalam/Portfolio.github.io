@@ -1,291 +1,339 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>𝐏𝐄𝐑𝐒𝐎𝐍𝐀𝐋 𝐏𝐎𝐑𝐓𝐅𝐎𝐋𝐈𝐎</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harini M — AI / GenAI Engineer</title>
+<meta name="description" content="Harini M — AI / GenAI Engineer building RAG, multi-agent and knowledge-graph systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href=" #">𝐇𝐚𝐫𝐢𝐧𝐢'𝐬 𝐏𝐨𝐫𝐭𝐟𝐨𝐥𝐢𝐨</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">𝐇𝐎𝐌𝐄</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">𝐀𝐁𝐎𝐔𝐓</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">𝐐𝐔𝐀𝐋𝐈𝐅𝐈𝐂𝐀𝐓𝐈𝐎𝐍</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">𝐏𝐑𝐎𝐉𝐄𝐂𝐓</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">𝐂𝐎𝐍𝐓𝐀𝐂𝐓</a>
-                    </li>
-                </ul>
-                
-            </div>
+
+<div class="grain"></div>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">HM<span class="dot">·</span></a>
+    <button id="navToggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="top" class="hero">
+  <canvas id="graphCanvas"></canvas>
+  <div class="hero-inner">
+    <p class="eyebrow reveal">AI / GENAI ENGINEER</p>
+    <h1 class="hero-title reveal">
+      I build systems that<br> <em>retrieve, reason,</em><br> and respond.
+    </h1>
+    <p class="hero-sub reveal">
+      Harini M — designing retrieval-augmented, multi-agent, and knowledge-graph
+      systems on AWS, from enterprise policy engines to voice-native assistants.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#projects" class="btn btn-primary">See the work</a>
+      <a href="mailto:harinimaruthasalam@gmail.com" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-inner about-grid">
+      <div class="about-photo reveal">
+        <img src="profile.png" alt="Portrait of Harini M">
+        <div class="about-photo-frame"></div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow reveal">01 — About</p>
+        <h2 class="section-title reveal">Grounded in machine learning, now building at the edge of what LLMs can do.</h2>
+        <p class="reveal">
+          I'm Harini, an AI / GenAI engineer working across retrieval-augmented generation,
+          multi-agent orchestration, and applied deep learning. My work spans enterprise
+          compliance and HR systems built on AWS Bedrock, healthcare data pipelines built
+          with Epic and Cerner data, and voice-native assistants powered by realtime APIs —
+          with roots in classical machine learning and computer vision.
+        </p>
+        <p class="reveal">
+          I like problems where an answer needs to be <em>found</em>, not just generated —
+          across a vector index, a knowledge graph, or a stack of enterprise documents —
+          and where the interface disappears into conversation.
+        </p>
+        <div class="about-facts reveal">
+          <div class="fact">
+            <span class="fact-num">8+</span>
+            <span class="fact-label">Shipped AI &amp; ML projects</span>
+          </div>
+          <div class="fact">
+            <span class="fact-num">GenAI</span>
+            <span class="fact-label">RAG · agents · voice</span>
+          </div>
+          <div class="fact">
+            <span class="fact-num">AWS</span>
+            <span class="fact-label">Bedrock-native builds</span>
+          </div>
         </div>
-    </nav>
-    <!-- main banner -->
-    <section class="header" id="home">
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h3 class="hero_title"> 𝐏𝐄𝐑𝐒𝐎𝐍𝐀𝐋 𝐏𝐎𝐑𝐓𝐅𝐎𝐋𝐈𝐎</h3>
-                <h4 class="hero_desc">DATA SCIENCE AND FULLSTACK ASPIRANT</h4>
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+      </div>
+    </div>
+  </section>
 
-<div id="typed-strings">
-  <h4>CHANGE IS INEVITABLE</h4>
-  <h4>GROWTH IS OPTIONAL.</h4>
-</div>
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="section-inner">
+      <p class="eyebrow reveal">02 — Skill Graph</p>
+      <h2 class="section-title reveal">The stack, by layer.</h2>
+      <p class="section-lede reveal">From language and models down to the databases that hold what they remember.</p>
 
-<span id="typed" style="color: white;"></span>
-
-<script>
-  var typed = new Typed('#typed', {
-    stringsElement: '#typed-strings',
-    typeSpeed: 20,
-    backSpeed: 20,
-    loop: true
-  });
-</script>
-  
-            </div>
-            </div>
+      <div class="skills-grid">
+        <div class="skill-node reveal">
+          <span class="skill-tag">languages</span>
+          <ul>
+            <li>Python</li>
+            <li>SQL</li>
+          </ul>
         </div>
-    </section>
 
-
-
-    <!-- about section-->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">𝐆𝐥𝐢𝐦𝐩𝐬𝐞𝐬 𝐚𝐛𝐨𝐮𝐭 𝐦𝐞</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                     <img src="IMG_20221209_133926-modified.png" width=80% class="center">
-                </div>
-
-                <div class="col-lg-8 mt-4 mt-md-4 mt-lg-0">
-                    <p>𝐇𝐢 𝐭𝐡𝐞𝐫𝐞 👋, ! 𝐌𝐲𝐬𝐞𝐥𝐟 𝐇𝐚𝐫𝐢𝐧𝐢 𝐌 👩‍💻  𝐁𝐮𝐝𝐝𝐢𝐧𝐠 "𝐃𝐚𝐭𝐚 𝐬𝐜𝐢𝐞𝐧𝐜𝐞 𝐞𝐧𝐠𝐢𝐧𝐞𝐞𝐫".✨  𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐄𝐃 𝐀𝐍 𝐈𝐍𝐓𝐄𝐑𝐍𝐒𝐇𝐈𝐏 𝐈𝐍 𝐂𝐂𝐌𝐏𝐋 𝐊𝐘𝐔𝐍𝐆𝐏𝐎𝐎𝐊 𝐍𝐀𝐓𝐈𝐎𝐍𝐀𝐋 𝐔𝐍𝐈𝐕𝐄𝐑𝐒𝐈𝐓𝐘, 𝐒𝐎𝐔𝐓𝐇 𝐊𝐎𝐑𝐄𝐀.🎊  𝐀𝐬𝐩𝐢𝐫𝐞𝐝 𝐭𝐨 𝐥𝐞𝐚𝐫𝐧 𝐝𝐞𝐞𝐩 𝐥𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐚𝐧𝐝 𝐟𝐮𝐥𝐥𝐬𝐭𝐚𝐜𝐤.  𝐓𝐫𝐲𝐢𝐧𝐠 𝐭𝐨 𝐞𝐱𝐩𝐥𝐨𝐫𝐞 𝐦𝐨𝐫𝐞 𝐢𝐧 𝐦𝐚𝐜𝐡𝐢𝐧𝐞 𝐥𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐚𝐧𝐝 𝐝𝐞𝐞𝐩 𝐥𝐞𝐚𝐫𝐧𝐢𝐧𝐠.
-                        
-                    </p>
-                    <div class="row mt-3">
-                        <div class="col-md-9">
-                            <ul>
-                                <li>𝐍𝐚𝐦𝐞: 𝐇𝐀𝐑𝐈𝐍𝐈 𝐌</li>
-                                
-                                <li>𝐏𝐨𝐬𝐢𝐭𝐢𝐨𝐧: 𝐒𝐭𝐮𝐝𝐞𝐧𝐭</li>
-                                <li>𝐈𝐧𝐬𝐭𝐢𝐭𝐮𝐭𝐢𝐨𝐧: 𝐊𝐏𝐑 𝐈𝐧𝐬𝐭𝐢𝐭𝐮𝐭𝐞 𝐨𝐟 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠 𝐚𝐧𝐝 𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲</li>
-                                <li>𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭𝐞𝐝 𝐢𝐧: 𝐌𝐀𝐂𝐇𝐈𝐍𝐄 𝐋𝐄𝐀𝐑𝐍𝐈𝐍𝐆 𝐀𝐍𝐃 𝐅𝐔𝐋𝐋𝐒𝐓𝐀𝐂𝐊</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <br>
-                        <p>𝗜 𝗵𝗮𝘃𝗲 𝗰𝗿𝗲𝗮𝘁𝗲𝗱 𝗮 "𝗔𝗜𝗥 𝗤𝗨𝗔𝗟𝗜𝗧𝗬 𝗠𝗢𝗡𝗜𝗧𝗢𝗥𝗜𝗡𝗚 𝗗𝗘𝗩𝗜𝗖𝗘" 𝗮 𝗜𝗢𝗧 𝗿𝗲𝗹𝗮𝘁𝗲𝗱 𝗽𝗿𝗼𝗷𝗲𝗰𝘁 𝗮𝗻𝗱 𝗮 𝗺𝗮𝗰𝗵𝗶𝗻𝗲 𝗹𝗲𝗮𝗿𝗻𝗶𝗻𝗴 𝗽𝗿𝗼𝗷𝗲𝗰𝘁 𝗼𝗻 "𝗠𝗜𝗟𝗞 𝗤𝗨𝗔𝗟𝗜𝗧𝗬 𝗣𝗥𝗘𝗗𝗜𝗖𝗧𝗜𝗢𝗡" .
-𝗖𝗼𝗺𝗽𝗹𝗲𝘁𝗲𝗱 𝗮𝗻 𝗶𝗻𝘁𝗲𝗿𝗻 𝗶𝗻 𝗖𝗖𝗠𝗣𝗟 𝗞𝗬𝗨𝗡𝗚𝗣𝗢𝗢𝗞 𝗨𝗡𝗜𝗩𝗘𝗥𝗦𝗜𝗧𝗬 𝗦𝗢𝗨𝗧𝗛 𝗞𝗢𝗥𝗘𝗔.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="skill-node skill-node-wide reveal">
+          <span class="skill-tag">genai / llm</span>
+          <ul>
+            <li>RAG &amp; GraphRAG</li>
+            <li>Multi-agent orchestration — LangGraph, CrewAI, Strands</li>
+            <li>Fine-tuning — LoRA, QLoRA, PEFT</li>
+            <li>Vector search — FAISS, Pinecone, OpenSearch</li>
+            <li>Evaluation — RAGAS</li>
+            <li>Streamlit</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- services section-->
-    <section id="education">
-        <div class="container">
-            <h1 class="text-center">Education</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class="fas servicesIcon fa-graduation-cap"></i>
-                            <h4 class="card-title mt-3">BE</h4>
-                            <p class="card-text mt-3">I am currently pursuing my BE degree in computer science and engineering from KPR Institute of Engineering and Technology, Coimbatore.
-                            </p>
-                            <div class="text-center">
-                                <a href="https://www.kpriet.ac.in/" class="btn btn-success " target="_blank">View Institution</a>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-book-open'></i>
-                            <h4 class="card-title mt-3">HSC</h4>
-                            <p class="card-text mt-3">I completed my HSC from KENDRIYA VIDYALAYA AFS SULUR, Coimbatore with 89.6%(CBSE). 
-                            </p>
-                            <br>
-                            <div class="text-center">
-                                <a href="http://sulur.kvs.ac.in/" class="btn btn-success " target="_blank">View School</a>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fa-book-open'></i>
-                            <h4 class="card-title mt-3">SSLC</h4>
-                            <p class="card-text mt-3">I completed my SSLC from KENDRIYA VIDYALAYA AFS SULUR, Coimbatore with 91.6%(CBSE).
-                            </p>
-                            <br>
-                            <div class="text-center">
-                                <a href="http://sulur.kvs.ac.in/" class="btn btn-success " target="_blank">View School</a>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-            </div>
+        <div class="skill-node reveal">
+          <span class="skill-tag">ml frameworks</span>
+          <ul>
+            <li>TensorFlow</li>
+            <li>PyTorch</li>
+            <li>Hugging Face Transformers</li>
+            <li>scikit-learn</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- portfolio section-->
-    <section id="projects">
-        <div class="container mt-3">
-            <h1 class="text-center">Projects</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <a href="https://github.com/HariniMaruthasalam/HOUSE-PRICE-PREDICTION-USING-RANDOM-FOREST" target="_blank"><img class="card-img-top"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5FoMlTMTaYE_TCd0MMwn76tzUDmy-JnP1Kg&usqp=CAU" alt="Card image" style="width:100%"></a>
-                        <div class="card-body">
-                            <h4 class="card-title">𝐇𝐎𝐔𝐒𝐄 𝐏𝐑𝐈𝐂𝐄 𝐏𝐑𝐄𝐃𝐈𝐂𝐓𝐈𝐎𝐍</h4>
-                            <p class="card-text">This was a project developed to find the house price prediction using machine learning algorithm(random forest)</p>
-                            <div class="text-center">
-                                <a href="https://github.com/HariniMaruthasalam/HOUSE-PRICE-PREDICTION-USING-RANDOM-FOREST" class="btn btn-success" target="_blank">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <a href="https://github.com/HariniMaruthasalam/TRAVEL-INSURANCE-PREDICTION" target="_blank"><img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY82ZlGLZJqoXwuIg6fk6JVjP3q27mOFM19DKkWcodWWYc0jsendDHJac-toMT2oCsPE4&usqp=CAU" alt="Card image" style="width:100%"></a>
-                        <div class="card-body">
-                            <h4 class="card-title">𝐓𝐑𝐀𝐕𝐄𝐋 𝐈𝐍𝐒𝐔𝐑𝐀𝐍𝐂𝐄 𝐏𝐑𝐄𝐃𝐈𝐂𝐓𝐈𝐎𝐍</h4>
-                            <p class="card-text">This was model developed to predict travel insurance</p>
-                            <div class="text-center">
-                                <a href="https://github.com/HariniMaruthasalam/TRAVEL-INSURANCE-PREDICTION" class="btn btn-success" target="_blank">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <a href="https://github.com/HariniMaruthasalam/IOT-PROJECT-Air-quality-monitoring-device-" target="_blank"><img class="card-img-top" src="data:image/jpeg;base64,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" alt="Card image" style="width:100%"></a>
-                        <div class="card-body">
-                            <h4 class="card-title">𝐀𝐈𝐑 𝐐𝐔𝐀𝐋𝐈𝐓𝐘 𝐌𝐎𝐍𝐈𝐓𝐎𝐑𝐈𝐍𝐆 𝐃𝐄𝐕𝐈𝐂𝐄</h4>
-                            <p class="card-text">Developed a air quality monitoring device to detect the quality of the air.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/HariniMaruthasalam/IOT-PROJECT-Air-quality-monitoring-device-"class="btn btn-success" target="_blank">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <a href="https://github.com/HariniMaruthasalam/Milk_quality_-prediction" target="_blank"><img class="card-img-top" src="data:image/jpeg;base64,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" alt="Card image" style="width:100%"></a>
-                        <div class="card-body">
-                            <h4 class="card-title">𝐌𝐈𝐋𝐊 𝐐𝐔𝐀𝐋𝐈𝐓𝐘 𝐏𝐑𝐄𝐃𝐈𝐂𝐓𝐈𝐎𝐍 𝐀𝐏𝐏</h4>
-                            <p class="card-text">This is a end-to-end milk quality prediction app using machine learning algorithm and deployed using streamlit</p>
-                            <div class="text-center">
-                                <a href="https://github.com/HariniMaruthasalam/Milk_quality_-prediction" class="btn btn-success" target="_blank">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <a href="https://github.com/HariniMaruthasalam/Fakecreditcard_detection" target="_blank"><img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCfP672uw86AVjLQdOP-pk7t84mvpoiGGYMA&usqp=CAU" alt="Card image" style="width:100%"></a>
-                        <div class="card-body">
-                            <h4 class="card-title">𝐅𝐀𝐊𝐄 𝐂𝐑𝐄𝐃𝐈𝐓 𝐂𝐀𝐑𝐃 𝐏𝐑𝐄𝐃𝐈𝐓𝐈𝐎𝐍</h4>
-                            <p class="card-text">It is a end-to-end machine learning project, the model was created using random forest algorithm and deployed using streamlit</p>
-                            <div class="text-center">
-                                <a href="https://github.com/HariniMaruthasalam/Fakecreditcard_detection" class="btn btn-success" target="_blank">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>   
-
-    <!-- contact section-->
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">𝐋𝐄𝐓𝐒 𝐂𝐎𝐍𝐍𝐄𝐂𝐓 𝐓𝐇𝐑𝐎𝐔𝐆𝐇</h1>
-
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                  
-                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
-                        <div id="embedmap-canvas" style="height:100%; width:99%;max-width:100%;">
-                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=sulur&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                            </iframe>
-                        </div>
-                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
-                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
-                        </style>
-                    </div>
-                </div>
-                 
-                <div class="col-lg-6 mt-4 mt-md-4 mt-lg-0">
-                                            <!-- form fields -->
-                                                    <form name="myform" action="message1.php" method="POST">
-                                                          <input name="name" type="text" class="form-control form-control-lg" placeholder="Name">
-                                                            <input name="email" type="email" class="form-control mt-3" placeholder="Email">
-                                                           <input name="subject" type="text" class="form-control mt-3" placeholder="Subject">
-                                                      <div class="mb-3 mt-3">
-                                                   <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Type your message ..."></textarea>
-                                               </div>
-                                       <button type="submit" class="button-area btn btn-success mt-3">Submit</button>
-                                  </form>
-                               <span></span>
-                           </div>
-                
-            </div>
+        <div class="skill-node reveal">
+          <span class="skill-tag">backend</span>
+          <ul>
+            <li>FastAPI</li>
+            <li>Microservices</li>
+          </ul>
         </div>
-    </section>
-    <!-- footer section-->
-    <footer id="footer">
-        <div class="container-fluid">
-            <div class="social-icons mt-4">
-               <p align="center">
-                <a href="mailto: harinimaruthasalam@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"  class="center"></i></a>
-                <a href="https://www.instagram.com/_.harinuuu" target="_blank"><i class="fab fa-instagram"  class="center"></i></a>
-                <a href="https://www.linkedin.com/in/harini-m-b9247a226/" target="_blank"><i class="fab fa-linkedin"  class="center"></i></a>
-                <a href="https://www.github.com/HariniMaruthasalam" target="_blank"><i class="fab fa-github"  class="center"></i></a>
-                <a href="https://www.hackerrank.com/21cs054_kpriet" target="_blank"><i class="fab fa-hackerrank"  class="center"></i></a>
-                <a href="https://www.kaggle.com/harinuu" target="_blank"><i class="fab fa-kaggle"  class="center"></i></a>
-            </div>
-        </div>
-    </footer>
-  </p>
-          
 
+        <div class="skill-node reveal">
+          <span class="skill-tag">cloud / mlops</span>
+          <ul>
+            <li>AWS</li>
+            <li>Docker</li>
+            <li>CI/CD</li>
+          </ul>
+        </div>
+
+        <div class="skill-node skill-node-wide reveal">
+          <span class="skill-tag">databases</span>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>Neo4j</li>
+            <li>Neptune</li>
+            <li>Redis</li>
+            <li>MongoDB</li>
+            <li>DynamoDB</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <p class="eyebrow reveal">03 — Selected Work</p>
+      <h2 class="section-title reveal">Projects.</h2>
+      <p class="section-lede reveal">Enterprise systems, applied research, and a few things built just to see if they'd work.</p>
+
+      <div class="projects-list">
+
+        <article class="project reveal">
+          <div class="project-index">01</div>
+          <div class="project-body">
+            <h3>Policy Recommendation Engine</h3>
+            <p class="project-desc">Client project: enterprise policy recommendation system using AWS Bedrock foundation models, vector search, and RAG to deliver context-aware compliance and HR policy suggestions.</p>
+            <div class="project-tags">
+              <span>AWS Bedrock</span><span>RAG</span><span>LangChain</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-index">02</div>
+          <div class="project-body">
+            <h3>Personalized Recommendation System</h3>
+            <p class="project-desc">Content recommendation engine using collaborative filtering and AWS Bedrock embeddings, with DynamoDB for user profiles and S3 for content storage.</p>
+            <div class="project-tags">
+              <span>DynamoDB</span><span>S3</span><span>AWS Bedrock</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-index">03</div>
+          <div class="project-body">
+            <h3>Feature Recognition System</h3>
+            <p class="project-desc">Visual feature detection and classification system using CNNs and transfer learning for automated content tagging and analysis.</p>
+            <div class="project-tags">
+              <span>Computer Vision</span><span>Deep Learning</span><span>CNN</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-index">04</div>
+          <div class="project-body">
+            <h3>Zoom Meeting Application</h3>
+            <p class="project-desc">Generates meeting tips by analyzing the character of participants present in meetings, using LLM and GenAI techniques.</p>
+            <div class="project-tags">
+              <span>LLM</span><span>GenAI</span><span>OpenAI</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-index">05</div>
+          <div class="project-body">
+            <h3>SlackBot</h3>
+            <p class="project-desc">Character analysis ahead of interactions, message rephrasing based on prior chats, and conflict-resolution advice — powered by an LLM over a vector store.</p>
+            <div class="project-tags">
+              <span>LangChain</span><span>Vector DB</span><span>LLM</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-index">06</div>
+          <div class="project-body">
+            <h3>ARIS Voice Assistant</h3>
+            <p class="project-desc">A relationship coach built on the OpenAI realtime API, using WebSocket streaming and NVIDIA voice recognition for natural, low-latency conversation.</p>
+            <div class="project-tags">
+              <span>OpenAI Realtime API</span><span>WebSocket</span><span>NVIDIA</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-index">07</div>
+          <div class="project-body">
+            <h3>Health Foundry</h3>
+            <p class="project-desc">Analyzed and surfaced insights from raw medical data in collaboration with Epic and Cerner, using AWS data analytics and health data services.</p>
+            <div class="project-tags">
+              <span>AWS Athena</span><span>Glue</span><span>HealthLake</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-index">08</div>
+          <div class="project-body">
+            <h3>Trash Detection</h3>
+            <p class="project-desc">Deep-learning based classification of waste by material characteristics — plastic, fabric, glass — using a CNN.</p>
+            <div class="project-tags">
+              <span>Deep Learning</span><span>CNN</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section section-alt">
+    <div class="section-inner">
+      <p class="eyebrow reveal">04 — Education</p>
+      <h2 class="section-title reveal">Foundations.</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">B.E., Computer Science &amp; Engineering</span>
+            <p>KPR Institute of Engineering and Technology, Coimbatore. Included an internship at CCMPL, Kyungpook National University, South Korea.</p>
+            <a href="https://www.kpriet.ac.in/" target="_blank" rel="noopener">View institution ↗</a>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">HSC — 89.6% (CBSE)</span>
+            <p>Kendriya Vidyalaya AFS Sulur, Coimbatore.</p>
+            <a href="http://sulur.kvs.ac.in/" target="_blank" rel="noopener">View school ↗</a>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">SSLC — 91.6% (CBSE)</span>
+            <p>Kendriya Vidyalaya AFS Sulur, Coimbatore.</p>
+            <a href="http://sulur.kvs.ac.in/" target="_blank" rel="noopener">View school ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="section-inner contact-inner">
+      <p class="eyebrow reveal">05 — Contact</p>
+      <h2 class="section-title reveal">Let's build something<br>that finds the answer.</h2>
+      <a href="mailto:harinimaruthasalam@gmail.com" class="contact-email reveal">harinimaruthasalam@gmail.com</a>
+
+      <div class="social-row reveal">
+        <a href="https://www.linkedin.com/in/harini-m-b9247a226/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8.5h4.56V23H.22V8.5zM8.44 8.5h4.37v1.98h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 7v8.38h-4.56v-7.43c0-1.77-.03-4.05-2.47-4.05-2.47 0-2.85 1.93-2.85 3.92v7.56H8.44V8.5z"/></svg>
+        </a>
+        <a href="https://www.github.com/HariniMaruthasalam" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3z"/></svg>
+        </a>
+        <a href="https://www.kaggle.com/harinuu" target="_blank" rel="noopener" aria-label="Kaggle">
+          <svg viewBox="0 0 24 24"><path d="M18.7 21.6h-3.5c-.2 0-.4-.1-.5-.3l-4.9-6.6-1.4 1.3v5c0 .3-.2.5-.5.5H5.4c-.3 0-.5-.2-.5-.5V2.9c0-.3.2-.5.5-.5h2.5c.3 0 .5.2.5.5v11.5l5.7-5.8c.1-.2.3-.2.5-.2h3.6c.4 0 .6.5.3.8l-6 5.8 6.6 7.7c.3.3 0 .8-.4.8z"/></svg>
+        </a>
+        <a href="mailto:harinimaruthasalam@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm10 9L3.5 6h17L12 13zM2 7.4V18h20V7.4l-10 7.3-10-7.3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <span>© 2026 Harini M</span>
+    <span class="footer-note">Built with retrieval in mind.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
-
 </html>
